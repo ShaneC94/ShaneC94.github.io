@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shane's To-Do List</title>
+</head>
+<body>
+    <div id="todo-list">
+        <h1>Shane's To-Do List</h1>
+        <input type="text" id="task" placeholder="Add a new task">
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate">
+        <select id="priority">
+            <option value="low" class="low-priority">Low Priority</option>
+            <option value="medium" class="medium-priority">Medium Priority</option>
+            <option value="high" class="high-priority">High Priority</option>
+        </select>
+        <button onclick="addTask()">Add</button>
+        <button onclick="sortTask()">Sort</button>
+
+        <p id="reminder">Make sure to do everything on time!</p>
+
+        <ul id="tasks">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
